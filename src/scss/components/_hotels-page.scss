@@ -1,0 +1,265 @@
+.hotels-page {
+  &__hero {
+    margin-bottom: 28px;
+    padding: 80px 0 100px 0;
+    background: rgba(0, 0, 0, 0.33) url("../img/hotels-fon.jpg") no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+
+  &__item {
+  }
+}
+.content-hotel {
+  &__recommendations {
+  }
+  &__bestsellers{
+    margin-bottom: 100px;
+    padding: 100px 0 140px 0;
+    background-color: #F8F8F8;
+  }
+  &__else-hotel{
+    padding: 100px 0 140px 0;
+    background-color: #F8F8F8;
+  }
+}
+.recommendations-hotel {
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__slider {
+    margin-bottom: 140px;
+  }
+
+  &__wrapper {
+    align-items: start;
+    margin-bottom: 50px;
+  }
+}
+.bestsellers-hotel{
+  &__title {
+    margin-bottom: 4px;
+  }
+  &__subtitle{
+    margin-bottom: 44px;
+  }
+
+  &__wrapper {
+    align-items: start;
+    margin-bottom: 50px;
+  }
+}
+.top-hotel{
+  &__title {
+    margin-bottom: 4px;
+  }
+  &__subtitle{
+    margin-bottom: 44px;
+  }
+  &__slider{
+    margin-bottom: 140px;
+  }
+  &__wrapper {
+    align-items: start;
+    margin-bottom: 50px;
+  }
+}
+
+.hero-hotels {
+  &__subtitle {
+    margin-bottom: 50px;
+    color: var(--light);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__breadcrumbs {
+  }
+}
+
+
+.hotels-slide {
+  &__wrap {
+    min-width: 700px;
+  }
+
+  &__image {
+    width: 384px;
+    height: 280px;
+  }
+
+  &__desc {
+    margin-right: 30px;
+  }
+
+  &__head {
+    align-self: start;
+  }
+
+  &__location {
+  }
+
+  &__title {
+  }
+
+  &__rating {
+  }
+
+  &__reviews {
+  }
+
+  &__advantages {
+    align-self: end;
+    justify-self: start;
+    grid-column: 1/3;
+    max-width: 100%;
+  }
+}
+
+
+@media all and (max-width: 1000px){
+  .hotels-page{
+    &__hero {
+      margin-bottom: 28px;
+      padding: 100px 0 100px 0;
+    }
+  }
+  .hotels-slide {
+    &__wrap {
+      min-width: unset;
+    }
+    &__image {
+      width: 100%;
+    }
+
+    &__desc {
+      margin-right: 30px;
+    }
+
+    &__head {
+      align-self: start;
+    }
+
+    &__advantages {
+      margin-top: 20px;
+    }
+  }
+  .hero-hotels {
+    &__title{
+      font-size: 80px;
+    }
+    &__subtitle {
+      margin-bottom: 50px;
+      color: var(--light);
+      text-align: center;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 60px;
+    }
+  }
+  .content-hotel{
+    &__else-hotel{
+      padding: 90px 0 110px 0;
+    }
+  }
+}
+
+@media all and (max-width: 550px){
+  .hero-hotels {
+    &__title{
+      font-size: 54px;
+      line-height: normal;
+    }
+    &__subtitle {
+      margin-bottom: 44px;
+      font-size: 24px;
+    }
+
+    &__breadcrumbs {
+      margin-bottom: 40px;
+    }
+  }
+  .content-hotel {
+    &__bestsellers{
+      margin-bottom: 80px;
+      padding: 80px 0 80px 0;
+      background-color: #F8F8F8;
+    }
+    &__else-hotel{
+      padding: 80px 0 80px 0;
+    }
+  }
+  .hotels-page{
+
+    &__hero {
+      margin-bottom: 28px;
+      padding: 66px 0 80px 0;
+    }
+  }
+  .recommendations-hotel {
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__slider {
+      margin-bottom: 80px;
+    }
+
+    &__wrapper {
+      align-items: start;
+      margin-bottom: 40px;
+    }
+  }
+  .bestsellers-hotel{
+    &__title {
+      margin-bottom: 4px;
+    }
+    &__subtitle{
+      margin-bottom: 30px;
+    }
+
+    &__wrapper {
+      align-items: start;
+      margin-bottom: 40px;
+    }
+  }
+  .top-hotel{
+    &__title {
+      margin-bottom: 4px;
+    }
+    &__subtitle{
+      margin-bottom: 30px;
+    }
+    &__slider{
+      margin-bottom: 80px;
+    }
+    &__wrapper {
+      align-items: start;
+      margin-bottom: 40px;
+    }
+  }
+  .hotels-slide {
+    &__wrap {
+      width: 250px;
+    }
+    &__image {
+      height: 200px;
+    }
+    &__desc {
+      padding: 20px;
+      margin-right: 0px;
+    }
+  }
+}

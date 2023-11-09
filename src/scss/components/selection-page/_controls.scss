@@ -1,0 +1,134 @@
+
+.controls-filter {
+  &__sort {
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__map {
+    margin-right: 26px;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    transition: 0.1s ease-in;
+    &:hover{
+      transition: 0.1s ease-in;
+      color: var(--text-hover);
+    }
+    &:hover .controls-filter__map-icon{
+      transition: 0.1s ease-in;
+      stroke: var(--text-hover);
+    }
+  }
+
+  &__map-icon {
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: #1C1C1C;
+  }
+
+  &__filter {
+  }
+}
+
+.sort {
+  &__btn {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    transition: 0.1s ease-in;
+    &:hover{
+      transition: 0.1s ease-in;
+      color: var(--text-hover);
+    }
+    &:hover .controls-filter__map-icon{
+      transition: 0.1s ease-in;
+      stroke: var(--text-hover);
+    }
+  }
+
+  &__icon {
+    margin-right: 7px;
+    width: 22px;
+    height: 22px;
+    stroke: #1C1C1C;
+  }
+
+  &__text {
+    &--value {
+      margin-left: 2px;
+      font-weight: 400;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    z-index: 5;
+    visibility: hidden;
+    padding: 14px 0;
+    border-radius: 30px;
+    background: var(--light);
+    box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.20);
+    transition: 0.3s ease-in;
+    &.active{
+      transition: 0.3s ease-in;
+      top: 50px;
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    padding: 0 30px;
+    color: #1C1C1C;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    user-select: none;
+    cursor: pointer;
+    &:not(:last-child){
+      border-bottom: 1px solid #D4D4D4;
+    }
+  }
+}
+
+
+@media all and (max-width: 700px) {
+  .sort{
+    &__menu {
+      &.active{
+        transition: 0.3s ease-in;
+        top: 30px;
+        visibility: visible;
+      }
+    }
+  }
+  .controls-filter{
+    &__wrap {
+      justify-content: space-between;
+    }
+  }
+  .filter{
+    &__btn{
+      border: none;
+    }
+  }
+}

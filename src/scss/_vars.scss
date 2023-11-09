@@ -1,0 +1,22 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light: #fff;
+  --light-hover: #F8F8F8;
+  --select-hover: #F3F1FF;
+  --light-dark-hover: #F3F3F3;
+  --black: #000;
+  --text: #1C1C1C;
+  --text-hover: #585858;
+  --brand-grey-dark: #828282;
+  --red: #EC1C24;
+  --red-hover: #DD1A21;
+  --border: #6A6A6A;
+}

@@ -1,0 +1,48 @@
+.accordion {
+  overflow: hidden;
+
+  &__title {
+    transition: 0.1s ease-in;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: relative;
+    margin-left: 10px;
+    width: 11px;
+    height: 12px;
+    transition: 0.2s ease-in;
+
+    &--active {
+      & .accordion__vertical-line{
+        transition: 0.2s ease-in;
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+
+  &__content {
+    height: 0;
+    transition: 0.2s ease-in;
+  }
+  &__vertical-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 19px;
+    width: 1px;
+    background-color: #A1A1A1;
+    transition: 0.2s ease-in;
+  }
+
+  &__horizontal-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 1px;
+    width: 19px;
+    background-color: #A1A1A1;
+  }
+}

@@ -1,0 +1,114 @@
+/* stylelint-disable */
+
+@mixin custom-checkbox1 {
+  position: relative;
+  display: inline-block;
+
+  &__field {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__content {
+    padding-left: 35px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      border: 2px solid #D4D4D4;
+      width: 26px;
+      height: 26px;
+      box-sizing: border-box;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      box-sizing: border-box;
+      background-color: #463998;
+      background-image: url("../img/check-input.svg");
+      background-position: center;
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+@mixin custom-checkbox {
+  position: relative;
+  display: inline-block;
+  &__field {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__content {
+
+    padding-left: 35px;
+    cursor: pointer;
+    color:  #1C1C1C;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      border: 2px solid #D4D4D4;
+      width: 26px;
+      height: 26px;
+      box-sizing: border-box;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5.5px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      box-sizing: border-box;
+      background-color: #463998;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1;
+}
+.custom-checkbox__field:checked + .custom-checkbox__content::before {
+  opacity: 1;
+  border: 2px solid #463998;
+}
+.custom-checkbox1__field:checked + .custom-checkbox1__content::after {
+  opacity: 1;
+}
+.custom-checkbox1__field:checked + .custom-checkbox1__content::before {
+  opacity: 1;
+  border: 2px solid #463998;
+}
+
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none;
+}

@@ -1,0 +1,55 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+// подключения компонентов страницы
+//Components
+@import "./components/slider";
+@import "./components/mailing-form";
+@import "./components/breadcrumbs";
+@import "./components/pagination";
+@import "./components/modal";
+@import "./components/filter";
+@import "./components/accordion";
+@import "./components/form";
+@import "./components/success-modal";
+@import "./components/map";
+@import "./components/vidget";
+
+@import "./components/header";
+//main-page
+@import "./components/main-page/main-hero";
+@import "./components/main-page/hot-tours";
+@import "./components/main-page/popular-hotel";
+@import "./components/main-page/reviews";
+@import "./components/main-page/news";
+@import "./components/main-page/about";
+//Selection-page
+@import "./components/selection-page/hero";
+@import "./components/selection-page/selection-setings";
+@import "./components/selection-page/content";
+@import "./components/selection-page/controls";
+@import "./components/selection-page/hotel-item";
+//Countries
+@import "./components/countries";
+//Hotels-page
+@import "./components/hotels-page";
+//Reviews-page
+@import "./components/reviews-page";
+//About-page
+@import "./components/about-page";
+//Contacts-page
+@import "./components/contacts-page";
+//News-page
+@import "./components/news-page";
+//Priority-page
+@import "./components/priority-page";
+//Pay-page
+@import "./components/pay-page";
+@import "./components/footer";
+
+
+

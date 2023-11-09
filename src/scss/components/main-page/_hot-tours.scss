@@ -1,0 +1,210 @@
+.hot-tours {
+  padding: 100px 0;
+
+  &__title-wrap {
+    width: max-content;
+    padding-bottom: 62px;
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+  }
+
+  &__creative-title {
+    position: absolute;
+    left: -127px;
+    top: 130px;
+  }
+
+  &__slider {
+  }
+}
+
+.slider-hot-tours {
+  &__wrapper {
+    margin-bottom: 50px;
+  }
+
+  &__slide {
+    border-radius: 30px;
+
+    &:nth-child(1) {
+      background: rgba(0, 0, 0, 0.10) url("../img/hot-tours-slider/slide1.jpg") no-repeat center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    &:nth-child(2) {
+      background: rgba(0, 0, 0, 0.10) url("../img/hot-tours-slider/slide2.jpg") no-repeat center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    &:nth-child(3) {
+      background: rgba(0, 0, 0, 0.10) url("../img/hot-tours-slider/slide3.jpg") no-repeat center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    &:nth-child(4) {
+      background: rgba(0, 0, 0, 0.10) url("../img/hot-tours-slider/slide4.jpg") no-repeat center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    &:nth-child(5) {
+      background: rgba(0, 0, 0, 0.10) url("../img/hot-tours-slider/slide5.jpg") no-repeat center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+    &:nth-child(6) {
+      background: rgba(0, 0, 0, 0.10) url("../img/hot-tours-slider/slide3.jpg") no-repeat center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+  }
+}
+
+.hot-tour {
+  width: 256px;
+  height: 340px;
+
+  &__wrap {
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__stick {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__stick-day {
+    padding: 3px 10px;
+    color: var(--light);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-radius: 30px;
+    border: 1px solid var(--light);
+  }
+
+  &__stick-price {
+    padding: 3px 10px;
+    color: var(--light);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-radius: 30px;
+    border: 1px solid var(--light);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+.info-tour {
+  &__countries {
+    display: flex;
+    color: var(--light);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__country {
+    display: flex;
+    align-items: center;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin: 0 5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--light);
+    }
+  }
+
+  &__city {
+  }
+
+  &__period {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__link {
+    display: flex;
+    color: var(--light);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-items: center;
+  }
+
+  &__link-icon {
+    margin-left: 12px;
+    width: 41px;
+    height: 16px;
+    fill: none;
+    stroke: #FFFFFF;
+  }
+}
+
+@media all and (max-width: 1460px) {
+  .hot-tours {
+    &__creative-title {
+      position: absolute;
+      left: unset;
+      right: -177px;
+      top: 65px;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .hot-tours {
+    padding: 80px 0;
+
+    &__title-wrap {
+      width: 100%;
+      padding-bottom: 32px;
+      position: relative;
+      text-align: center;
+    }
+
+    &__creative-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      right: unset;
+      top: 0px;
+    }
+  }
+  .slider-hot-tours {
+    &__wrapper {
+      margin-bottom: 40px;
+    }
+  }
+}

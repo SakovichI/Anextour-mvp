@@ -1,0 +1,348 @@
+<div class="reviews-main">
+  <section class="reviews-main__hero hero-reviews">
+    <h1 class="hero-reviews__title title">отзывы</h1>
+    <p class="hero-reviews__subtitle">Истории наших путешественников: <br>Вдохновение для вашего следующего приключения
+    </p>
+  </section>
+  <section class="breadcrumbs reviews-main__breadcrumbs">
+    <div class="container-small">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link breadcrumbs__link--active" href="reviews-page.html">Отзывы</a>
+    </div>
+  </section>
+  <section class="reviews-main__content content-reviews">
+    <div class="container-small">
+      <div class="content-reviews__head">
+        <h2 class="content-reviews__title title-2">отзывы</h2>
+        <button class="content-reviews__btn btn-reset" data-path="review">
+          <svg class="content-reviews__icon">
+            <use xlink:href="img/sprite.svg#review"></use>
+          </svg>
+          Оставить отзыв
+        </button>
+        <div class="content-reviews__modal modal" data-target="review">
+          <div class="modal__container content-reviews__modal-container">
+            <div class="modal__content content-reviews__modal-content">
+              <button class="btn-reset modal__close content-reviews__btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                  <path d="M13 0C5.82864 0 0 5.82864 0 13C0 20.1714 5.82864 26 13 26C20.1714 26 26 20.1714 26 13C26 5.82864 20.1714 0 13 0ZM13 24.6878C6.56103 24.6878 1.31221 19.439 1.31221 13C1.31221 6.56103 6.56103 1.31221 13 1.31221C19.439 1.31221 24.6878 6.56103 24.6878 13C24.6878 19.439 19.439 24.6878 13 24.6878Z" fill="#D4D4D4"/>
+                  <path d="M13.9136 12.9385L17.7282 9.12398C17.9723 8.87985 17.9723 8.45262 17.7282 8.20849C17.484 7.96436 17.0568 7.96436 16.8127 8.20849L12.9981 12.023L9.18355 8.20849C8.93942 7.96436 8.51219 7.96436 8.26806 8.20849C8.02393 8.45262 8.02393 8.87985 8.26806 9.12398L12.0826 12.9385L8.26806 16.7226C8.02393 16.9667 8.02393 17.3939 8.26806 17.6381C8.39013 17.7601 8.57322 17.8212 8.72581 17.8212C8.87839 17.8212 9.06149 17.7601 9.18355 17.6381L12.9981 13.8235L16.8127 17.6381C16.9347 17.7601 17.1178 17.8212 17.2704 17.8212C17.423 17.8212 17.6061 17.7601 17.7282 17.6381C17.9723 17.3939 17.9723 16.9667 17.7282 16.7226L13.9136 12.9385Z" fill="#D4D4D4"/>
+                </svg>
+              </button>
+              <form action="#" class="form reviews-form" data-form='Отзыв'>
+                <div class="reviews-form__title">
+                  будем рады <br> <span class="reviews-form__title reviews-form__title--italic">вашему</span> отзыву
+                </div>
+                <div class="reviews-form__row form__row">
+                  <label class="form__label reviews-form__label">
+                    <span class="reviews-form__label-text form__label-text">Имя и Фамилия</span>
+                    <input class="input-reset form__input reviews-form__input" name="Имя" placeholder="Александрa Иванова" type="text">
+                  </label>
+                  <label class="form__label reviews-form__label">
+                    <span class="reviews-form__label-text form__label-text" >Откуда вы</span>
+                    <input class="input-reset form__input reviews-form__input" name="Откуда вы" placeholder="Москва" type="text">
+                  </label>
+                </div>
+                <div class="reviews-form__row form__row">
+                  <label class="form__label reviews-form__label">
+                    <span class="reviews-form__label-text form__label-text">Когда летали (дата)</span>
+                    <input class="input-reset form__input reviews-form__input" name="Когда летали" value="10.10.23" type="date">
+                  </label>
+                  <label class="form__label reviews-form__label">
+                    <span class="reviews-form__label-text form__label-text">Куда летали (страна и отель)</span>
+                    <input class="input-reset form__input reviews-form__input" name="Куда летали" placeholder="Бали, Hanging Gardens " type="text">
+                  </label>
+                </div>
+                <label class="form__label reviews-form__label form__label--textarea">
+                  <span class="reviews-form__label-text form__label-text">Напишите отзыв</span>
+                  <textarea name="Отзыв"  cols="30" rows="10" class="input-reset reviews-form__textarea form__textarea" placeholder="Текст"></textarea>
+                </label>
+                <button class="btn-reset form__btn reviews-form__btn">
+                  <span class="form__btn-text">
+                    Отправить
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="content-reviews__wrap" data-list="reviews">
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar1.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Мария С. из Москвы</h3>
+            <p class="reviews__subtitle">Летала в Париж 20.07.23 в отель Ritz-Carlton </p>
+            <p class="reviews__text">Невероятное путешествие!
+              Спасибо за организацию моей поездки в Париж. Все было просто идеально - от отелей до экскурсий. Не могу
+              дождаться следующего приключения с вашей турфирмой!</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar2.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Александр Г. из Санкт-Петербурга</h3>
+            <p class="reviews__subtitle">Летал в Тайланд 10.05.23 в отель The Silver Palm Wellness Resort</p>
+            <p class="reviews__text">Путешествие в Таиланд оказалось невероятным благодаря вашим услугам.
+              Профессиональное планирование, отличные рекомендации по местам для посещения и великолепный выбор
+              отелей. Обязательно вернусь к вам снова.</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar3.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Екатерина Л. из Екатеринбурга</h3>
+            <p class="reviews__subtitle">Летала на Бали 12.08.23 в отель Hanging Gardens</p>
+            <p class="reviews__text">Спасибо за незабываемый отдых на Бали! Все было под контролем, начиная с
+              бронирования и заканчивая возвращением домой. Отличная коммуникация и внимание к деталям создали
+              идеальное путешествие.</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar1.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Мария С. из Москвы</h3>
+            <p class="reviews__subtitle">Летала в Париж 20.07.23 в отель Ritz-Carlton </p>
+            <p class="reviews__text">Невероятное путешествие!
+              Спасибо за организацию моей поездки в Париж. Все было просто идеально - от отелей до экскурсий. Не могу
+              дождаться следующего приключения с вашей турфирмой!</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar2.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Александр Г. из Санкт-Петербурга</h3>
+            <p class="reviews__subtitle">Летал в Тайланд 10.05.23 в отель The Silver Palm Wellness Resort</p>
+            <p class="reviews__text">Путешествие в Таиланд оказалось невероятным благодаря вашим услугам.
+              Профессиональное планирование, отличные рекомендации по местам для посещения и великолепный выбор
+              отелей. Обязательно вернусь к вам снова.</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar1.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Мария С. из Москвы</h3>
+            <p class="reviews__subtitle">Летала в Париж 20.07.23 в отель Ritz-Carlton </p>
+            <p class="reviews__text">Невероятное путешествие!
+              Спасибо за организацию моей поездки в Париж. Все было просто идеально - от отелей до экскурсий. Не могу
+              дождаться следующего приключения с вашей турфирмой!</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar3.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Екатерина Л. из Екатеринбурга</h3>
+            <p class="reviews__subtitle">Летала на Бали 12.08.23 в отель Hanging Gardens</p>
+            <p class="reviews__text">Спасибо за незабываемый отдых на Бали! Все было под контролем, начиная с
+              бронирования и заканчивая возвращением домой. Отличная коммуникация и внимание к деталям создали
+              идеальное путешествие.</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar1.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Мария С. из Москвы</h3>
+            <p class="reviews__subtitle">Летала в Париж 20.07.23 в отель Ritz-Carlton </p>
+            <p class="reviews__text">Невероятное путешествие!
+              Спасибо за организацию моей поездки в Париж. Все было просто идеально - от отелей до экскурсий. Не могу
+              дождаться следующего приключения с вашей турфирмой!</p>
+          </div>
+        </li>
+        <li data-item="reviews" class="reviews">
+          <div class="reviews__wrap">
+            <img alt="avatar" class="reviews__avatar" height="64" src="img/avatar/avatar2.png" width="64">
+            <svg class="reviews__rating" fill="none" height="22" viewBox="0 0 134 22" width="134"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 8.49987L14.0061 7.97432L10.9956 0.411133L7.9851 7.97432L0 8.49987L6.12451 13.7002L4.11477 21.5888L10.9956 17.2395L17.8765 21.5888L15.8668 13.7002L22 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M50 8.49987L42.0061 7.97432L38.9956 0.411133L35.9851 7.97432L28 8.49987L34.1245 13.7002L32.1148 21.5888L38.9956 17.2395L45.8765 21.5888L43.8668 13.7002L50 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M78 8.49987L70.0061 7.97432L66.9956 0.411133L63.9851 7.97432L56 8.49987L62.1245 13.7002L60.1148 21.5888L66.9956 17.2395L73.8765 21.5888L71.8668 13.7002L78 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M106 8.49987L98.0061 7.97432L94.9956 0.411133L91.9851 7.97432L84 8.49987L90.1245 13.7002L88.1148 21.5888L94.9956 17.2395L101.877 21.5888L99.8668 13.7002L106 8.49987Z"
+                fill="#EC1C24"/>
+              <path
+                d="M134 8.49987L126.006 7.97432L122.996 0.411133L119.985 7.97432L112 8.49987L118.125 13.7002L116.115 21.5888L122.996 17.2395L129.877 21.5888L127.867 13.7002L134 8.49987Z"
+                fill="#EC1C24"/>
+            </svg>
+            <h3 class="reviews__title">Александр Г. из Санкт-Петербурга</h3>
+            <p class="reviews__subtitle">Летал в Тайланд 10.05.23 в отель The Silver Palm Wellness Resort</p>
+            <p class="reviews__text">Путешествие в Таиланд оказалось невероятным благодаря вашим услугам.
+              Профессиональное планирование, отличные рекомендации по местам для посещения и великолепный выбор
+              отелей. Обязательно вернусь к вам снова.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="pagination content-reviews__pagination" data-pagination="reviews">
+        <button class="btn-reset pagination__btn pagination__btn--prev">
+          <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" fill="white" r="16" stroke="#D4D4D4" transform="rotate(-180 16 16)"/>
+            <path
+              d="M17.8025 11.3801L13.9992 15.1835C13.55 15.6326 13.55 16.3676 13.9992 16.8168L17.8025 20.6201"
+              stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+              stroke-width="1.3"/>
+          </svg>
+        </button>
+        <input class="input-reset pagination__input" type="number" value="1">
+        <span class="pagination__amount">из 10</span>
+        <button class="btn-reset pagination__btn pagination__btn--next">
+          <svg fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" fill="white" r="16" stroke="#D4D4D4"/>
+            <path
+              d="M14.1975 20.6199L18.0008 16.8165C18.45 16.3674 18.45 15.6324 18.0008 15.1832L14.1975 11.3799"
+              stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+              stroke-width="1.3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>

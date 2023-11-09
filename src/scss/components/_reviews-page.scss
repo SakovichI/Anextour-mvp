@@ -1,0 +1,269 @@
+.reviews-main {
+  &__hero {
+    margin-bottom: 28px;
+    padding: 80px 0 100px 0;
+    background: rgba(0, 0, 0, 0.18) url("../img/reviews-fon.jpg") no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    margin-bottom: 140px;
+  }
+}
+
+.hero-reviews {
+  &__title {
+  }
+
+  &__subtitle {
+    color: var(--light);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.content-reviews {
+  &__head {
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__btn {
+    width: 178px;
+    height: 40px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 30px;
+    border: 1px solid #6A6A6A;
+    background-color: #FFFFFF;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      transition: 0.1s ease-in;
+      background-color: var(--light-hover);
+    }
+  }
+
+  &__icon {
+    display: none;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__modal {
+    overflow-y: auto;
+  }
+
+  &__modal-container {
+
+    width: max-content;
+    height: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__modal-content {
+    position: relative;
+    padding: 52px 40px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(43, 43, 51, 0.20);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 26px;
+    right: 40px;
+  }
+
+  &__wrap {
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    border-bottom: 1px solid #D4D4D4;
+  }
+
+  &__pagination {
+  }
+}
+
+
+
+
+.reviews-form {
+  &__title {
+    margin-bottom: 24px;
+    color: var(--text);
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    &--italic {
+      font-style: italic;
+    }
+  }
+
+  &__row {
+  }
+
+  &__label {
+    & .just-validate-error-label{
+      top: unset;
+      bottom: -15px;
+      left: 20px;
+    }
+  }
+
+  &__label-text {
+  }
+
+  &__input {
+    &.just-validate-error-field{
+      border: 1px solid var(--red);
+    }
+  }
+
+  &__textarea {
+    &.just-validate-error-field{
+      border: 1px solid var(--red);
+    }
+  }
+
+  &__btn {
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .reviews-main {
+    &__hero {
+      padding: 100px 0 93px 0;
+    }
+    &__content {
+      margin-bottom: 100px;
+    }
+  }
+  .hero-reviews {
+    &__title {
+      margin-bottom: 28px;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 168.75% */
+    }
+
+    &__subtitle {
+      color: var(--light);
+      text-align: center;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  .content-reviews{
+    &__head{
+      margin-bottom: 44px;
+    }
+    &__wrap {
+      padding-bottom: 44px;
+    }
+  }
+}
+@media all and (max-width: 800px){
+  .content-reviews{
+    &__wrap {
+      grid-template-columns: repeat(2, 1fr);
+      & .reviews__wrap{
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media all and (max-width: 700px) {
+  .reviews-main {
+    &__hero {
+      padding: 66px 0 46px 0;
+    }
+    &__breadcrumbs{
+      margin-bottom: 40px;
+    }
+    &__content {
+      margin-bottom: 80px;
+    }
+  }
+  .hero-reviews {
+    &__title {
+      margin-bottom: 12px;
+      font-size: 54px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+}
+@media all and (max-width: 580px){
+  .content-reviews{
+    &__head{
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+    &__wrap {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+    &__btn {
+      padding: 0;
+      border: none;
+      justify-content: start;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    &__icon {
+      display: block;
+    }
+    &__modal-content{
+      padding: 20px 20px;
+    }
+    &__btn-close{
+      right: 20px;
+    }
+  }
+  .reviews-form {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}

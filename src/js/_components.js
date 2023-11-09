@@ -1,0 +1,15 @@
+import './components/controls'
+import './components/pagination'
+import './components/modal'
+import './components/accordion'
+import './components/filter-range'
+import './components/smooth-scroll'
+import './components/tooltips'
+import './components/link-btn'
+import './components/validation'
+import './components/countries-podbor'
+
+//Sliders
+import './components/slider'
+import './components/hotel-slider'
+import './components/hotel-item'

@@ -1,0 +1,94 @@
+.sliderMy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0 0px;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  &:hover .sliderMy__btn{
+    opacity: 1;
+    transition: 0.2s ease-in;
+  }
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+
+  &__slide {
+    flex: 0 0 auto;
+  }
+  &__scrollbar{
+    height: 1px;
+    width: 100%;
+    background-color: #D4D4D4;
+    cursor: grab;
+
+    & .swiper-scrollbar-drag {
+      width: 160px;
+      height: 1px;
+      background-color: #1C1C1C;
+      position: relative;
+      border-radius: 10px;
+      left: 0;
+      top: -1px;
+
+    }
+  }
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__btn {
+    position: absolute;
+    opacity: 0;
+    top: 45%;
+    z-index: 3;
+    transform: translateY(-50%);
+    transition: 0.2s ease-in;
+    & svg{
+      filter: drop-shadow(0px 4px 7px rgba(43, 43, 51, 0.20));
+    }
+    &--prev{
+      left: -17px;
+    }
+    &--next{
+      right: -17px;
+    }
+    &:hover svg > circle{
+      transition: 0.2s ease-in;
+      fill: #F8F8F8;
+    }
+  }
+}
+.sliderMy-thumbs{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  &__wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  &__slide{
+    flex: 1 0 auto;
+  }
+}
