@@ -1,12 +1,13 @@
 import Swiper, {Navigation, Pagination, Scrollbar} from 'swiper';
 Swiper.use([Navigation, Pagination, Scrollbar]);
-const swiper = new Swiper(".popular-hotels__slider", {
+const swiperPopular = new Swiper(".popular-hotels__slider", {
   direction:'vertical',
   wrapperClass: 'sliderMy__wrapper',
   slideClass: 'sliderMy__slide',
-  slidesPerView: "3",
+  slidesPerView: 'auto',
   spaceBetween:12,
   preventClick: true,
+  initialSlide:2,
   navigation: {
     nextEl: '.sliderMy__btn--next',
     prevEl: '.sliderMy__btn--prev',
@@ -26,8 +27,7 @@ const swiper = new Swiper(".popular-hotels__slider", {
         el: '.sliderMy__scrollbar',
         draggable: true,
         dragSize:164,
-      }
+      },
     }
   },
-
 });

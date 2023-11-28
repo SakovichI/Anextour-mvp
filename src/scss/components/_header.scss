@@ -149,10 +149,6 @@
       stroke: var(--text-hover);
     }
   }
-
-  &__burger {
-  }
-
   &__burger-menu {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -245,6 +241,14 @@
   }
 }
 
+@media all and (max-width: 1150px) {
+  .header-nav {
+    &__list {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
 
 @media all and (max-width: 1050px) {
   .header-nav {

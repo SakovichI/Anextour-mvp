@@ -1,6 +1,6 @@
 import Swiper, {Navigation, Pagination, Scrollbar} from 'swiper';
 Swiper.use([Navigation, Pagination, Scrollbar]);
-const swiper = new Swiper(".sliderMy", {
+const slider = new Swiper(".sliderMy", {
   wrapperClass: 'sliderMy__wrapper',
   slideClass: 'sliderMy__slide',
   slidesPerView: "auto",
@@ -25,5 +25,4 @@ const swiper = new Swiper(".sliderMy", {
       }
     }
   },
-
 });
